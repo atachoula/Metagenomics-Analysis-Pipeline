@@ -1,5 +1,8 @@
 # Metagenomics-Analysis-Pipeline
 
+The following pipeline covers the key steps for analyzing metagenomics data, from public downloaded data to the generation and annotation of **Metagenome-assembled Genomes (MAGs).**
+
+
 ## **1. Download data**
 
   ### **1.1 SRA run selector**
