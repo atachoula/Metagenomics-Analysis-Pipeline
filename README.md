@@ -90,4 +90,20 @@ metabat2 -i metaspades_output/contigs.fasta -o metabat2_output/bin \
 checkm lineage_wf -t 4 -x fa metabat2_output/bin checkm_output
 ```
 
+## **6. Visualization of the Phylogenetic Tree**
+
+To visualize the produced tree, you can use the web-based interactive **Tree of Life (iTOL):**  https://itol.embl.de/index.shtml. iTOL only takes in newick formatted trees so you will need to reformat the tree using **FigTree** (http://tree.bio.ed.ac.uk/software/figtree/)
+
+## **7. Annotation**
+
+First, you can use the tool **Prokka**, the most widely used pipeline for prokaryotic MAGs
+
+```javascript
+
+prokka --outdir prokka_output --prefix sample_name metaspades_output/contigs.fasta
+```
+
+Then you can proceed by searching your predicted proteins against functional databases.
+
+
 
