@@ -13,7 +13,7 @@ The following pipeline covers the key steps for analyzing metagenomics data, fro
   If you have the accession numbers, you can download the data directly from the command line, using the SRA toolkit. After you install the SRA toolkit, use the following command in order to download the data:
 
  ```javascript
-     fastq-dump --split-files <accession_number>
+ fastq-dump --split-files <accession_number>
   ```
 
 Where `<accession_number>` will be replaced by the actual accession number of the data you want to download.
@@ -26,8 +26,8 @@ You should start with a wuality control of your data, in order to identify any p
 
 
 ```javascript
-  # If all the fastq.gz files are in the same place in your system, you can do:
-  fastqc *.fastq.gz
+# If all the fastq.gz files are in the same place in your system, you can do:
+fastqc *.fastq.gz
 
   ```
 
